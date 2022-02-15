@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 63425564}
   - component: {fileID: 63425567}
   m_Layer: 0
-  m_Name: Apple (Collectable)
+  m_Name: (scrapped) Apple (Collectable)
   m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
