@@ -73,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.running;
             //The code that makes the sprite look left
             sprite.flipX = true;
+            
         }
         else
         {
