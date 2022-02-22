@@ -6,6 +6,7 @@ using UnityEngine;
 //You could apparently also set the functions to public but [SerializeField] is like protected in C++
 public class PlayerMovement : MonoBehaviour
 {
+    public bool player1 = true;
     //Function reference needed for the movement
     private Rigidbody2D rb;
 
@@ -42,18 +43,23 @@ public class PlayerMovement : MonoBehaviour
     //This part is for the button mapping
     private void Update()
     {
-        directionX = Input.GetAxisRaw("Horizontal");
-
-        rb.velocity = new Vector2(directionX * moveSpeed, rb.velocity.y);
-
-
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            player1 = !player1;
+        }
+        directionX = Input.GetAxisRaw("Horizontal");
+        if ((this.name == "Player") ? player1 : !player1)
+        {
+            rb.velocity = new Vector2(directionX * moveSpeed, rb.velocity.y);
+
+
+            if (Input.GetButtonDown("Jump") && isGrounded())
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            }
+            UpdateAnimations();
         }
 
-        UpdateAnimations();
-       
     }
 
     private void UpdateAnimations()
