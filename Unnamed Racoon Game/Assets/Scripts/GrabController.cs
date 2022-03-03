@@ -9,6 +9,8 @@ public class GrabController : MonoBehaviour
     public Transform BoxHolder;
     public Transform BoxHolder2;
     public float rayDist;
+    public Transform Microwave;
+    public Transform Microwave2;
 
     void Update()
     {

@@ -16,11 +16,18 @@ public class PlayerMovement : MonoBehaviour
     // Doesn't matter if you initialise directionX to a default value or not. 
     float directionX = 0f;
 
+    //The part below is for the microwave/item teleporter
+    public Transform Microwave;
+    public Transform Microwave2;
+
     [SerializeField] private LayerMask jumpableGround;
 
     // I can change the default values for the speed and jump height in here
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpHeight = 14f;
+
+    // If you want to add more SFX, just do the same thing as jumping sfx
+    [SerializeField] private AudioSource jumpingSoundFX;
 
     private BoxCollider2D coll;
 
@@ -48,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
             player1 = !player1;
         }
         directionX = Input.GetAxisRaw("Horizontal");
+        // The part below is for games with 2 players, it's a checker for the game to see which player is being controlled
         if ((this.name == "Player") ? player1 : !player1)
         {
             rb.velocity = new Vector2(directionX * moveSpeed, rb.velocity.y);
@@ -55,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetButtonDown("Jump") && isGrounded())
             {
+                jumpingSoundFX.Play();
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
             UpdateAnimations();

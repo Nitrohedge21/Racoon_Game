@@ -55,8 +55,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\GrabController.cs" />
+    <Compile Include="Assets\Scripts\ItemTeleporter.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\(scrapped) ItemCollector.cs" />
+    <Compile Include="Assets\Scripts\ItemTeleporter2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

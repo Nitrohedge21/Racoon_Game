@@ -10,6 +10,9 @@ public class CameraController : MonoBehaviour
     private Transform playerFollow;
     PlayerMovement player1Movement;
 
+    public Transform Microwave;
+    public Transform Microwave2;
+
     private void Start()
     {
         player1Movement = player1.GetComponent<PlayerMovement>();
