@@ -6,6 +6,10 @@ public class ItemTeleporter2 : MonoBehaviour
 {
     public Transform Microwave;
     public Transform Microwave2;
+
+    //Testing the drop with teleporter
+    RaycastHit2D grabCheck;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Box"))

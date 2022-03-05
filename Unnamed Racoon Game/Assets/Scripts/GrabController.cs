@@ -18,6 +18,8 @@ public class GrabController : MonoBehaviour
 
         if (grabCheck.collider != null && grabCheck.collider.tag == "Box")
         {
+            //So i added an input to unity project settings and tried to use that
+            //Input.GetButtonDown("Grab") similar to movement inputs but it didn't work out, the player kept dropping the box
             if (Input.GetKey(KeyCode.G))
             {
                 // This part is to grab the box/object
