@@ -15,8 +15,8 @@ public class GrabController : MonoBehaviour
     void Update()
     {
         RaycastHit2D grabCheck = Physics2D.Raycast(GrabDetect.position, Vector2.right * transform.localScale, rayDist);
-
-        if (grabCheck.collider != null && grabCheck.collider.tag == "Box")
+        // The second part, "or" section, is for the new item that the npc spawns in
+        if (grabCheck.collider != null && grabCheck.collider.tag == "Box" || grabCheck.collider != null &&  grabCheck.collider.tag == "TradeBox")
         {
             //So i added an input to unity project settings and tried to use that
             //Input.GetButtonDown("Grab") similar to movement inputs but it didn't work out, the player kept dropping the box
@@ -41,7 +41,7 @@ public class GrabController : MonoBehaviour
             //This part is for the second hand to grab and drop
             RaycastHit2D grabCheck2 = Physics2D.Raycast(GrabDetect2.position, Vector2.left * transform.localScale, rayDist);
 
-            if (grabCheck2.collider != null && grabCheck2.collider.tag == "Box")
+            if (grabCheck2.collider != null && grabCheck2.collider.tag == "Box" || grabCheck2.collider != null &&  grabCheck2.collider.tag == "TradeBox")
             {
                 if (Input.GetKey(KeyCode.G))
                 {

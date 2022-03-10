@@ -11,7 +11,9 @@ public class TraderNPC : MonoBehaviour
     {
         if (collision.tag =="Box")
         {
-            Instantiate(TradedObject, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.GetComponentInParent<Transform>());
+            
+            Instantiate(TradedObject, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.transform.parent = null);
+            Debug.Log("Instantiate test");
             Destroy(collision.gameObject);
             // Destroys the object it collides with
         }
