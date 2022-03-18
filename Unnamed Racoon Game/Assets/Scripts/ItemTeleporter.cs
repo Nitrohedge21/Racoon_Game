@@ -12,7 +12,7 @@ public class ItemTeleporter : MonoBehaviour
     //If you want to resize an item, make sure that their hitboxes don't get mixed up because that causes the teleporter to glitch out
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Box"))
+        if (collision.CompareTag("Box") || collision.CompareTag("TradeBox"))
         {
             collision.transform.position = (Microwave2.position + new Vector3(1, 0, 0));
             

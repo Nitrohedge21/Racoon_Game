@@ -12,7 +12,7 @@ public class ItemTeleporter2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Box"))
+        if (collision.CompareTag("Box") || collision.CompareTag("TradeBox"))
         {
             collision.transform.position = (Microwave.position + new Vector3(1,0,0));
             

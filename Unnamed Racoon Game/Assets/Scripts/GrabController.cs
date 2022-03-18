@@ -26,7 +26,9 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = BoxHolder;
                 grabCheck.collider.gameObject.transform.position = BoxHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                Debug.Log("Item grabbed");
+                //Debug.Log("Item grabbed");
+                //Had to comment it out because it kept getting spammed for some reason
+                //Might be because there are multiple versions of it?
             }
             else
             {
@@ -34,7 +36,8 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = null;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 //Might change .isKinematic to gravityscale = 0f because apparently is causes some glitches.
-                Debug.Log("Item dropped");
+                //Debug.Log("Item dropped");
+                //Check the first grab function to see the reason why it's commented out
             }
         }
             
@@ -49,14 +52,16 @@ public class GrabController : MonoBehaviour
                     grabCheck2.collider.gameObject.transform.parent = BoxHolder2;
                     grabCheck2.collider.gameObject.transform.position = BoxHolder2.position;
                     grabCheck2.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                    Debug.Log("Item grabbed");
-                }
-                else
+                //Debug.Log("Item grabbed");
+                //Check the first grab function to see the reason why it's commented out
+            }
+            else
                 {
                     // This part is to drop the box/object
                     grabCheck2.collider.gameObject.transform.parent = null;
                     grabCheck2.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-                    Debug.Log("Item dropped");
+                    //Debug.Log("Item dropped");
+                    //Check the first grab function to see the reason why it's commented out
                 }
             }
         }
