@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 2744532533
     locked: 0
+  - name: NPC Layer
+    uniqueID: 4127878553
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
