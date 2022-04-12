@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TraderNPC : MonoBehaviour
 {
+    [SerializeField] DialogScript dialog;
     public GameObject TradedObject;
     //public Transform TraderDude;
 
@@ -20,4 +21,10 @@ public class TraderNPC : MonoBehaviour
 
     }
 
+    // the part below is for npc dialog
+
+    public void Interact()
+    {
+        DialogManager.Instance.showDialog(dialog);
+    }
 }

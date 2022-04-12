@@ -59,8 +59,10 @@
     <Compile Include="Assets\Scripts\GrabController.cs" />
     <Compile Include="Assets\Scripts\ItemTeleporter.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\(scrapped) ItemCollector.cs" />
     <Compile Include="Assets\Scripts\ItemDeleter.cs" />
+    <Compile Include="Assets\Scripts\(scrapped) ItemCollector.cs" />
+    <Compile Include="Assets\Scripts\DialogManager.cs" />
+    <Compile Include="Assets\Scripts\DialogScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

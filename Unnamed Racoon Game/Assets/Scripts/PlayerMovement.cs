@@ -69,6 +69,10 @@ public class PlayerMovement : MonoBehaviour
             UpdateAnimations();
         }
 
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Interact();
+        }
     }
 
     private void UpdateAnimations()
@@ -113,4 +117,13 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
+
+    //The part below is for NPC Interaction
+
+   void Interact()
+    {
+        //var faceDir = new Vector3(anim.GetFloat("flipX"));
+    }
+
+
 }
