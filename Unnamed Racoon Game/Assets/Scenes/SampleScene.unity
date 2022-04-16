@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 275460517}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21689,7 +21689,7 @@ GameObject:
   - component: {fileID: 796743895}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22139,6 +22139,8 @@ GameObject:
   - component: {fileID: 1164062669}
   - component: {fileID: 1164062670}
   - component: {fileID: 1164062671}
+  - component: {fileID: 1164062672}
+  - component: {fileID: 1164062673}
   m_Layer: 0
   m_Name: NPC test
   m_TagString: Untagged
@@ -22273,6 +22275,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1164062672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164062666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95995eba6f5734043a63de87f3cd3923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 2086780820}
+  dialogText: {fileID: 36655704}
+  dialog: testing text stuff with lines and etc lol haha!!! ecks dee!!!
+  playerInRange: 0
+--- !u!61 &1164062673
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164062666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5660155, y: -0.1997701}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.132031, y: 1.6004598}
+  m_EdgeRadius: 0
 --- !u!1 &1406957553
 GameObject:
   m_ObjectHideFlags: 0
@@ -22574,7 +22618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1759646298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22901,8 +22945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 91}
-  m_SizeDelta: {x: 760, y: 150}
+  m_AnchoredPosition: {x: 24.385792, y: 85.45102}
+  m_SizeDelta: {x: 734.453, y: 129.0979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086780822
 MonoBehaviour:
