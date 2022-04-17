@@ -30,7 +30,15 @@ public class Dialog : MonoBehaviour
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
+                //Makes the dialog box appear, now gonna try to figure out how to make it so that a small bubble appears on the npc's head
+                //so that the player can know that they can talk to them. - 17.04.2022
             }
+           
+        }
+        if (!playerInRange)
+        {
+            dialogBox.SetActive(false);
+            //Closes the dialog box if the player leaves the range of npc
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
