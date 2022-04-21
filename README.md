@@ -4,4 +4,4 @@
 - Done✅ - Character Switching
 - Done✅ - Item Teleporter
 - Done✅ - SFX
-- [WIP]🕒 - Diailog Box
+- [WIP]🕒 - Dialog Box
