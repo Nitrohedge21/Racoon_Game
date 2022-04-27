@@ -10,8 +10,9 @@ public class CameraController : MonoBehaviour
     private Transform playerFollow;
     PlayerMovement player1Movement;
 
-    public Transform Microwave;
-    public Transform Microwave2;
+    private Transform Microwave;
+    private Transform Microwave2;
+    //TIL, this is a stupid thing to do, it literally has no use outside of the teleporter script. -27.04.2022
 
     private void Start()
     {

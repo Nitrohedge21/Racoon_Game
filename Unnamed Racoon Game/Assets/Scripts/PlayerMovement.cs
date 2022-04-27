@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     float directionX = 0f;
 
     //The part below is for the microwave/item teleporter
-    public Transform Microwave;
-    public Transform Microwave2;
+    private Transform Microwave;
+    private Transform Microwave2;
 
     [SerializeField] private LayerMask jumpableGround;
 
