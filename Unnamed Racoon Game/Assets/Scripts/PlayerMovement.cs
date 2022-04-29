@@ -69,10 +69,10 @@ public class PlayerMovement : MonoBehaviour
             UpdateAnimations();
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Interact();
-        }
+        //if (Input.GetKeyDown(KeyCode.Z))
+        //{
+        //    Interact();
+        //}
     }
 
     private void UpdateAnimations()
@@ -120,10 +120,10 @@ public class PlayerMovement : MonoBehaviour
 
     //The part below is for NPC Interaction
 
-   void Interact()
-    {
-        //var faceDir = new Vector3(anim.GetFloat("flipX"));
-    }
+   //void Interact()
+   // {
+   //     //var faceDir = new Vector3(anim.GetFloat("flipX"));
+   // }
 
 
 }

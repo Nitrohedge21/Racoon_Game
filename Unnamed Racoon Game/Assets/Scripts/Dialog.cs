@@ -19,7 +19,7 @@ public class Dialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Z) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.Z) && playerInRange)
         {
             if (dialogBox.activeInHierarchy)
             {

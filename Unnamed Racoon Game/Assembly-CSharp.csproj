@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\unused scripts\DialogManager.cs" />
     <Compile Include="Assets\Scripts\TraderNPC.cs" />
+    <Compile Include="Assets\Scripts\ItemCombiner.cs" />
     <Compile Include="Assets\Scripts\ItemTeleporter2.cs" />
     <Compile Include="Assets\Scripts\GrabController.cs" />
     <Compile Include="Assets\Scripts\ItemTeleporter.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Scripts\unused scripts\DialogScript.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />
     <Compile Include="Assets\Scripts\unused scripts\(scrapped) ItemCollector.cs" />
+    <Compile Include="Assets\Scripts\Gate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
