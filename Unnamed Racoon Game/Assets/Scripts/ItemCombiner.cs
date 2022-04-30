@@ -10,7 +10,7 @@ public class ItemCombiner : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Box" || collision.gameObject.tag == "CombinedItem")
+        if (collision.gameObject.tag == "Box" /*|| collision.gameObject.tag == "CombinedItem"*/)
         {
 
             Instantiate(TradedObject, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.transform.parent = null);
