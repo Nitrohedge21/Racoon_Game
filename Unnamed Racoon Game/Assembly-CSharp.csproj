@@ -65,9 +65,9 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\ItemDeleter.cs" />
     <Compile Include="Assets\Scripts\unused scripts\DialogScript.cs" />
+    <Compile Include="Assets\Scripts\Gate2.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />
     <Compile Include="Assets\Scripts\unused scripts\(scrapped) ItemCollector.cs" />
-    <Compile Include="Assets\Scripts\Gate2.cs" />
     <Compile Include="Assets\Scripts\menu scripts\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
